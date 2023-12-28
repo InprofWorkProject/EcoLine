@@ -14,6 +14,8 @@
 		F739BBB42B3D753C007FB38C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F739BBB22B3D753C007FB38C /* LaunchScreen.storyboard */; };
 		F739BBBF2B3D753D007FB38C /* EcoLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F739BBBE2B3D753D007FB38C /* EcoLineTests.swift */; };
 		F739BBCA2B3D753D007FB38C /* EcoLineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F739BBC92B3D753D007FB38C /* EcoLineUITests.swift */; };
+		F79CCEF62B3E1C3D0074569E /* ItemList_s_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79CCEF52B3E1C3D0074569E /* ItemList_s_Storyboard.storyboard */; };
+		F79CCEF82B3E227D0074569E /* ItemList_s_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79CCEF72B3E227D0074569E /* ItemList_s_Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		F739BBC52B3D753D007FB38C /* EcoLineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoLineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F739BBC92B3D753D007FB38C /* EcoLineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoLineUITests.swift; sourceTree = "<group>"; };
 		F739BBCB2B3D753D007FB38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F79CCEF52B3E1C3D0074569E /* ItemList_s_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ItemList_s_Storyboard.storyboard; sourceTree = "<group>"; };
+		F79CCEF72B3E227D0074569E /* ItemList_s_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList_s_Controller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				F739BBB02B3D753C007FB38C /* Assets.xcassets */,
 				F739BBB22B3D753C007FB38C /* LaunchScreen.storyboard */,
 				F739BBB52B3D753C007FB38C /* Info.plist */,
+				F79CCEF72B3E227D0074569E /* ItemList_s_Controller.swift */,
+				F79CCEF52B3E1C3D0074569E /* ItemList_s_Storyboard.storyboard */,
 			);
 			path = EcoLine;
 			sourceTree = "<group>";
@@ -229,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F79CCEF62B3E1C3D0074569E /* ItemList_s_Storyboard.storyboard in Resources */,
 				F739BBB42B3D753C007FB38C /* LaunchScreen.storyboard in Resources */,
 				F739BBB12B3D753C007FB38C /* Assets.xcassets in Resources */,
 				F739BBAF2B3D751F007FB38C /* Main.storyboard in Resources */,
@@ -256,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F79CCEF82B3E227D0074569E /* ItemList_s_Controller.swift in Sources */,
 				F739BBAC2B3D751F007FB38C /* ViewController.swift in Sources */,
 				F739BBAA2B3D751F007FB38C /* AppDelegate.swift in Sources */,
 			);
