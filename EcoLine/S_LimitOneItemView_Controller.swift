@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class OneItemViewController : UIViewController{
+class LimitOneItemViewController : UIViewController{
     @IBOutlet weak var UpperNavBar: UINavigationBar!
     @IBOutlet weak var UpRigthButton: UIBarButtonItem!
     @IBOutlet weak var UpCenterButton: UIButton!
@@ -18,12 +18,6 @@ class OneItemViewController : UIViewController{
     @IBOutlet weak var ImageView: UIImageView!
     @IBOutlet weak var DateLabel: UILabel!
     @IBOutlet weak var LowerNavBar: UINavigationItem!
-    @IBOutlet weak var LowRightButton: UIBarButtonItem!
-    @IBOutlet weak var LowLeftButton: UIBarButtonItem!
-    
-    
-    
-    
-    
-    
+    @IBOutlet var LowRightButton: UIBarButtonItem!
+    @IBOutlet var LowLefrButton: UIBarButtonItem!
 }
