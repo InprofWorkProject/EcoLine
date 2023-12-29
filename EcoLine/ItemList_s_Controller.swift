@@ -14,4 +14,12 @@ class ItemListController : UIViewController{
     @IBOutlet weak var UpperNav: UINavigationBar!
     @IBOutlet weak var LowerNav: UINavigationBar!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        backButtonToNavBar()
+    }
+    
+    func backButtonToNavBar(){
+        
+    }
 }
