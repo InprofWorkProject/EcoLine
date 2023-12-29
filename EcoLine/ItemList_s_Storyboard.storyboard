@@ -26,27 +26,49 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="FEi-EX-rQw"/>
+                                    <navigationItem id="wvg-EZ-hf6">
+                                        <nil key="title"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="2cD-bU-Np3"/>
+                                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GwO-Vw-i2M">
+                                            <rect key="frame" x="131.5" y="7" width="151" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button"/>
+                                        </button>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" id="pr0-mH-uRi"/>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z7D-A0-w4y">
                                 <rect key="frame" x="0.0" y="818" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="XnG-3S-890"/>
+                                    <navigationItem title="Title" id="XnG-3S-890">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="G3z-Cm-yWf"/>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="CF1-GK-Ww2"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="2Qb-vU-NA0" appends="YES" id="LIg-U8-SBL"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="FooterButton" destination="XnG-3S-890" id="LhM-zR-Qg1"/>
                         <outlet property="LowerNav" destination="z7D-A0-w4y" id="nFY-Ld-DxX"/>
+                        <outlet property="PanGesture" destination="2Qb-vU-NA0" id="c7Q-a2-MFe"/>
+                        <outlet property="ReturnBottun" destination="2cD-bU-Np3" id="vx7-pc-DCA"/>
+                        <outlet property="SortListButton" destination="pr0-mH-uRi" id="hoi-4U-scK"/>
+                        <outlet property="SortSelectButton" destination="G3z-Cm-yWf" id="7oh-Yf-2ho"/>
+                        <outlet property="TitleButton" destination="GwO-Vw-i2M" id="WeI-uq-4ic"/>
                         <outlet property="UpperNav" destination="2dI-dy-LGn" id="bhI-AF-HzK"/>
                         <outletCollection property="ListTable" destination="qyc-wI-itH" collectionClass="NSMutableArray" id="K65-bb-HeN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mk8-nB-7kx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="2Qb-vU-NA0"/>
             </objects>
             <point key="canvasLocation" x="165.21739130434784" y="147.99107142857142"/>
         </scene>
