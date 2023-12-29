@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ItemListController : UIViewController{
+class LimitListController : UIViewController{
     @IBOutlet var ListTable: [UITableView]!
     @IBOutlet weak var UpperNav: UINavigationBar!
     @IBOutlet weak var LowerNav: UINavigationBar!
@@ -19,13 +19,14 @@ class ItemListController : UIViewController{
     @IBOutlet weak var DeleteSelectButton: UIBarButtonItem!
     @IBOutlet weak var TitleButton: UIButton!
     @IBOutlet weak var FooterButton: UINavigationItem!
-    
+    @IBOutlet var AllDeleteButton: UIBarButtonItem!
     
     override func viewDidLoad() {
        
         super.viewDidLoad()
         
         ReturnBottun.title = "<"
+        
         SortListButton.title = "並び替え"
         
         TitleButton.setTitle("EcoLine", for: .normal)
@@ -33,5 +34,9 @@ class ItemListController : UIViewController{
         DeleteSelectButton.title = "選択消去"
         
         FooterButton.title = ""
+        
+        AllDeleteButton.title = "一括消去"
+        
+        
     }
 }
