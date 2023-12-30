@@ -10,12 +10,12 @@ import Foundation
 import UIKit
 
 class AllDeleteAlert{//   　　　　　UIViewController型を引数で受け取る　　deleteするためのアクションここを変更して違うアクションにできる
-    static func allDeleteAction(from viewController: UIViewController , deleteAction : @escaping () -> Void){
+    static func allDeleteAction(from viewController: UIViewController){
         
         let alertController = UIAlertController(title : "一括削除", message: "一括削除します、よろしいですか？", preferredStyle: .alert)
         
         let  deleteAction = UIAlertAction(title: "削除", style: .destructive){
-            _ in deleteAction()
+            _ in DataBaseManager.allDelete()
         }
         alertController.addAction(deleteAction)
         //                                                       nilの場合、戻るボタンを押すとポップアップが閉じられる

@@ -21,6 +21,7 @@
 		F7A3446D2B3F73430043FAA7 /* S_OneItemView_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A3446C2B3F73430043FAA7 /* S_OneItemView_Controller.swift */; };
 		F7C9C81A2B3F6EB8003C6AD6 /* S_LimitList_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C9C8192B3F6EB8003C6AD6 /* S_LimitList_Controller.swift */; };
 		F7F6E7BE2B3FABFA00AD78A6 /* AllDeletePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6E7BD2B3FABFA00AD78A6 /* AllDeletePopUp.swift */; };
+		F7F6E7C02B40351100AD78A6 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6E7BF2B40351100AD78A6 /* DataBaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		F7C9C8182B3F6E82003C6AD6 /* S_LimitList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = S_LimitList.storyboard; sourceTree = "<group>"; };
 		F7C9C8192B3F6EB8003C6AD6 /* S_LimitList_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_LimitList_Controller.swift; sourceTree = "<group>"; };
 		F7F6E7BD2B3FABFA00AD78A6 /* AllDeletePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDeletePopUp.swift; sourceTree = "<group>"; };
+		F7F6E7BF2B40351100AD78A6 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				F75A01432B3F8626008DB4ED /* S_LimitOneItemView.storyboard */,
 				F75A01442B3F8656008DB4ED /* S_LimitOneItemView_Controller.swift */,
 				F7F6E7BD2B3FABFA00AD78A6 /* AllDeletePopUp.swift */,
+				F7F6E7BF2B40351100AD78A6 /* DataBaseManager.swift */,
 			);
 			path = EcoLine;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7F6E7C02B40351100AD78A6 /* DataBaseManager.swift in Sources */,
 				F7C9C81A2B3F6EB8003C6AD6 /* S_LimitList_Controller.swift in Sources */,
 				F79CCEF82B3E227D0074569E /* S_ItemList_Controller.swift in Sources */,
 				F7F6E7BE2B3FABFA00AD78A6 /* AllDeletePopUp.swift in Sources */,
