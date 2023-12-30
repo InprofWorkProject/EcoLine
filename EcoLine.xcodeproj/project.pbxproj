@@ -20,7 +20,7 @@
 		F7A3446B2B3F72E30043FAA7 /* S_OneItemView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7A3446A2B3F72E30043FAA7 /* S_OneItemView.storyboard */; };
 		F7A3446D2B3F73430043FAA7 /* S_OneItemView_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A3446C2B3F73430043FAA7 /* S_OneItemView_Controller.swift */; };
 		F7C9C81A2B3F6EB8003C6AD6 /* S_LimitList_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C9C8192B3F6EB8003C6AD6 /* S_LimitList_Controller.swift */; };
-		F7F6E7BC2B3F882300AD78A6 /* S_AllDeleteConfirmationPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6E7BB2B3F882300AD78A6 /* S_AllDeleteConfirmationPageController.swift */; };
+		F7F6E7BE2B3FABFA00AD78A6 /* AllDeletePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6E7BD2B3FABFA00AD78A6 /* AllDeletePopUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +62,7 @@
 		F7A3446C2B3F73430043FAA7 /* S_OneItemView_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_OneItemView_Controller.swift; sourceTree = "<group>"; };
 		F7C9C8182B3F6E82003C6AD6 /* S_LimitList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = S_LimitList.storyboard; sourceTree = "<group>"; };
 		F7C9C8192B3F6EB8003C6AD6 /* S_LimitList_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_LimitList_Controller.swift; sourceTree = "<group>"; };
-		F7F6E7BA2B3F881700AD78A6 /* S_AllDeleteConfirmationPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = S_AllDeleteConfirmationPage.storyboard; sourceTree = "<group>"; };
-		F7F6E7BB2B3F882300AD78A6 /* S_AllDeleteConfirmationPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_AllDeleteConfirmationPageController.swift; sourceTree = "<group>"; };
+		F7F6E7BD2B3FABFA00AD78A6 /* AllDeletePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDeletePopUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +127,7 @@
 				F7A3446C2B3F73430043FAA7 /* S_OneItemView_Controller.swift */,
 				F75A01432B3F8626008DB4ED /* S_LimitOneItemView.storyboard */,
 				F75A01442B3F8656008DB4ED /* S_LimitOneItemView_Controller.swift */,
-				F7F6E7BA2B3F881700AD78A6 /* S_AllDeleteConfirmationPage.storyboard */,
-				F7F6E7BB2B3F882300AD78A6 /* S_AllDeleteConfirmationPageController.swift */,
+				F7F6E7BD2B3FABFA00AD78A6 /* AllDeletePopUp.swift */,
 			);
 			path = EcoLine;
 			sourceTree = "<group>";
@@ -286,8 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7C9C81A2B3F6EB8003C6AD6 /* S_LimitList_Controller.swift in Sources */,
-				F7F6E7BC2B3F882300AD78A6 /* S_AllDeleteConfirmationPageController.swift in Sources */,
 				F79CCEF82B3E227D0074569E /* S_ItemList_Controller.swift in Sources */,
+				F7F6E7BE2B3FABFA00AD78A6 /* AllDeletePopUp.swift in Sources */,
 				F739BBAC2B3D751F007FB38C /* ViewController.swift in Sources */,
 				F7A3446D2B3F73430043FAA7 /* S_OneItemView_Controller.swift in Sources */,
 				F75A01452B3F8657008DB4ED /* S_LimitOneItemView_Controller.swift in Sources */,
