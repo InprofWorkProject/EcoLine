@@ -13,7 +13,7 @@ class AllDeleteAlert{//   　　　　　UIViewController型を引数で受け�
     static func allDeleteAction(from viewController: UIViewController){
         
         let alertController = UIAlertController(title : "一括削除", message: "一括削除します、よろしいですか？", preferredStyle: .alert)
-        
+        //DataBaseManagerクラスから呼び出し
         let  deleteAction = UIAlertAction(title: "削除", style: .destructive){
             _ in DataBaseManager.allDelete()
         }
