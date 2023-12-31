@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7034BC02B40F33F00F9A264 /* S_SegueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7034BBF2B40F33F00F9A264 /* S_SegueManager.swift */; };
 		F739BBAA2B3D751F007FB38C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F739BBA92B3D751F007FB38C /* AppDelegate.swift */; };
 		F739BBAC2B3D751F007FB38C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F739BBAB2B3D751F007FB38C /* ViewController.swift */; };
 		F739BBAF2B3D751F007FB38C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F739BBAD2B3D751F007FB38C /* Main.storyboard */; };
@@ -17,11 +18,10 @@
 		F75A01452B3F8657008DB4ED /* S_LimitOneItemView_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75A01442B3F8656008DB4ED /* S_LimitOneItemView_Controller.swift */; };
 		F79CCEF62B3E1C3D0074569E /* S_ItemList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79CCEF52B3E1C3D0074569E /* S_ItemList.storyboard */; };
 		F79CCEF82B3E227D0074569E /* S_ItemList_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79CCEF72B3E227D0074569E /* S_ItemList_Controller.swift */; };
-		F7A3446B2B3F72E30043FAA7 /* S_OneItemView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7A3446A2B3F72E30043FAA7 /* S_OneItemView.storyboard */; };
 		F7A3446D2B3F73430043FAA7 /* S_OneItemView_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A3446C2B3F73430043FAA7 /* S_OneItemView_Controller.swift */; };
 		F7C9C81A2B3F6EB8003C6AD6 /* S_LimitList_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C9C8192B3F6EB8003C6AD6 /* S_LimitList_Controller.swift */; };
-		F7F6E7BE2B3FABFA00AD78A6 /* AllDeletePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6E7BD2B3FABFA00AD78A6 /* AllDeletePopUp.swift */; };
-		F7F6E7C02B40351100AD78A6 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6E7BF2B40351100AD78A6 /* DataBaseManager.swift */; };
+		F7F6E7BE2B3FABFA00AD78A6 /* S_AllDeletePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6E7BD2B3FABFA00AD78A6 /* S_AllDeletePopUp.swift */; };
+		F7F6E7C02B40351100AD78A6 /* S_DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6E7BF2B40351100AD78A6 /* S_DataBaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F7034BBF2B40F33F00F9A264 /* S_SegueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_SegueManager.swift; sourceTree = "<group>"; };
 		F739BBA62B3D751F007FB38C /* EcoLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F739BBA92B3D751F007FB38C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F739BBAB2B3D751F007FB38C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,16 +56,13 @@
 		F739BBC52B3D753D007FB38C /* EcoLineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoLineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F739BBC92B3D753D007FB38C /* EcoLineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoLineUITests.swift; sourceTree = "<group>"; };
 		F739BBCB2B3D753D007FB38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F75A01432B3F8626008DB4ED /* S_LimitOneItemView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = S_LimitOneItemView.storyboard; sourceTree = "<group>"; };
 		F75A01442B3F8656008DB4ED /* S_LimitOneItemView_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_LimitOneItemView_Controller.swift; sourceTree = "<group>"; };
 		F79CCEF52B3E1C3D0074569E /* S_ItemList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = S_ItemList.storyboard; sourceTree = "<group>"; };
 		F79CCEF72B3E227D0074569E /* S_ItemList_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_ItemList_Controller.swift; sourceTree = "<group>"; };
-		F7A3446A2B3F72E30043FAA7 /* S_OneItemView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = S_OneItemView.storyboard; sourceTree = "<group>"; };
 		F7A3446C2B3F73430043FAA7 /* S_OneItemView_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_OneItemView_Controller.swift; sourceTree = "<group>"; };
-		F7C9C8182B3F6E82003C6AD6 /* S_LimitList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = S_LimitList.storyboard; sourceTree = "<group>"; };
 		F7C9C8192B3F6EB8003C6AD6 /* S_LimitList_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_LimitList_Controller.swift; sourceTree = "<group>"; };
-		F7F6E7BD2B3FABFA00AD78A6 /* AllDeletePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDeletePopUp.swift; sourceTree = "<group>"; };
-		F7F6E7BF2B40351100AD78A6 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		F7F6E7BD2B3FABFA00AD78A6 /* S_AllDeletePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_AllDeletePopUp.swift; sourceTree = "<group>"; };
+		F7F6E7BF2B40351100AD78A6 /* S_DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_DataBaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,14 +121,12 @@
 				F739BBB52B3D753C007FB38C /* Info.plist */,
 				F79CCEF72B3E227D0074569E /* S_ItemList_Controller.swift */,
 				F7C9C8192B3F6EB8003C6AD6 /* S_LimitList_Controller.swift */,
-				F7C9C8182B3F6E82003C6AD6 /* S_LimitList.storyboard */,
 				F79CCEF52B3E1C3D0074569E /* S_ItemList.storyboard */,
-				F7A3446A2B3F72E30043FAA7 /* S_OneItemView.storyboard */,
 				F7A3446C2B3F73430043FAA7 /* S_OneItemView_Controller.swift */,
-				F75A01432B3F8626008DB4ED /* S_LimitOneItemView.storyboard */,
 				F75A01442B3F8656008DB4ED /* S_LimitOneItemView_Controller.swift */,
-				F7F6E7BD2B3FABFA00AD78A6 /* AllDeletePopUp.swift */,
-				F7F6E7BF2B40351100AD78A6 /* DataBaseManager.swift */,
+				F7F6E7BD2B3FABFA00AD78A6 /* S_AllDeletePopUp.swift */,
+				F7F6E7BF2B40351100AD78A6 /* S_DataBaseManager.swift */,
+				F7034BBF2B40F33F00F9A264 /* S_SegueManager.swift */,
 			);
 			path = EcoLine;
 			sourceTree = "<group>";
@@ -261,7 +257,6 @@
 				F739BBB42B3D753C007FB38C /* LaunchScreen.storyboard in Resources */,
 				F739BBB12B3D753C007FB38C /* Assets.xcassets in Resources */,
 				F739BBAF2B3D751F007FB38C /* Main.storyboard in Resources */,
-				F7A3446B2B3F72E30043FAA7 /* S_OneItemView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,14 +281,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7F6E7C02B40351100AD78A6 /* DataBaseManager.swift in Sources */,
+				F7F6E7C02B40351100AD78A6 /* S_DataBaseManager.swift in Sources */,
 				F7C9C81A2B3F6EB8003C6AD6 /* S_LimitList_Controller.swift in Sources */,
 				F79CCEF82B3E227D0074569E /* S_ItemList_Controller.swift in Sources */,
-				F7F6E7BE2B3FABFA00AD78A6 /* AllDeletePopUp.swift in Sources */,
+				F7F6E7BE2B3FABFA00AD78A6 /* S_AllDeletePopUp.swift in Sources */,
 				F739BBAC2B3D751F007FB38C /* ViewController.swift in Sources */,
 				F7A3446D2B3F73430043FAA7 /* S_OneItemView_Controller.swift in Sources */,
 				F75A01452B3F8657008DB4ED /* S_LimitOneItemView_Controller.swift in Sources */,
 				F739BBAA2B3D751F007FB38C /* AppDelegate.swift in Sources */,
+				F7034BC02B40F33F00F9A264 /* S_SegueManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
