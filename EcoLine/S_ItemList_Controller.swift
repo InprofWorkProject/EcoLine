@@ -43,7 +43,7 @@ class ItemListController : UIViewController,  UITableViewDelegate, UITableViewDa
     //データベースからにアクセスする
     //データベースからデータを取得する
     //テーブルリストのインスタンスにデータを渡す
-    //テーブルに表示する
+    //テーブル登録順に表示する
     //-------------------------------------------------------------------
     
     
@@ -71,6 +71,11 @@ class ItemListController : UIViewController,  UITableViewDelegate, UITableViewDa
     //-------------------------------------------------------------------
     
     
+    //-------------------------------------------------------------------
+    //並べ替え機能
+    //期限の日にち順にソート
+    //際表示
+    //-------------------------------------------------------------------
     
     //仮のメソッド（コンパイルエラーを消えるか試すため）
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
