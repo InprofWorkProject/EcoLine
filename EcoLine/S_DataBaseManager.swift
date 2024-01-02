@@ -18,63 +18,65 @@ class DataBaseManager{
             //シングルトンパターンのインスタンス
             let fileManager = FileManager.default
             
-            //urlsメソッドを使ってデータの場所を取得する　　配列[]で返してくる
+            //urlsメソッドを使ってデータベースの場所を取得する　　配列[]で返してくる
             let urls = fileManager.urls(for: .documentDirectory, in: .userDomainMask)
             
             //ドキュメントディレクトリーは基本一つなので０番目を指定する
             let documentDirectory = urls[0] as URL
             
+            //最終てきに出来上がったパス
             let dbPath = documentDirectory.appendingPathComponent("mydatabase.db").path
             
-            let nowDate = Date()
             
-            let query = "DELETE FROM EcoLineDB WHERE LIMIT_TIME <= ?;"
-            /*
-            var db: OpaquePointer?
-            // データベースに接続
-            if sqlite3_open(dbPath, &db) == SQLITE_OK {
-                // 現在の日時を取得
+            //データベース接続をひ保持するための入れ物
+            var dbPointer :OpaquePointer?
+            
+            
+            //実際に接続していく処理                   接続がokだったら
+            if sqlite3_open(dbPath, &dbPointer) == SQLITE_OK{
+                
+                
                 let nowDate = Date()
-                // DateFormatterを使って文字列に変換
+                //日付のデータはそのままだと使えないのでフォーマットする
                 let formatter = DateFormatter()
                 formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
                 let dateString = formatter.string(from: nowDate)
                 
-                // SQLクエリの準備
+                //SQLインジェクション対策が必要　　　　　　　　　　　　　　　　  「？」はプレースホルダー
                 let query = "DELETE FROM EcoLineDB WHERE LIMIT_TIME <= ?;"
-                var statement: OpaquePointer?
-                // SQLクエリのコンパイル
-                if sqlite3_prepare_v2(db, query, -1, &statement, nil) == SQLITE_OK {
-                    // 現在の日時をバインド
-                    sqlite3_bind_text(statement, 1, dateString, -1, nil)
+                
+                var statementCommand: OpaquePointer?
+                
+                
+                //実際に使うクエリをここで作る     SQL文の文字列の最後まで読み込む意味の-1
+                if sqlite3_prepare_v2(dbPointer, query, -1, &statementCommand, nil) == SQLITE_OK{
                     
-                    // クエリの実行
-                    if sqlite3_step(statement) != SQLITE_DONE {
-                        let errmsg = String(cString: sqlite3_errmsg(db))
-                        print("エラー: \(errmsg)")
+                    //現在日時を使える状態にする　　　　SQLのプレースホルダーに入るものの設定もここでやる
+                    sqlite3_bind_text(statementCommand, 1, dateString, -1, nil )
+                    
+                    //クエリを実行する　　sqlite3_stepこのメソッドはDBの挿入、更新、削除の処理ができる
+                    //エラーが出て実行できなかったらエラ〜チェックする
+                    if sqlite3_step(statementCommand) != SQLITE_DONE{
+                        
+                        //C言語をsSwift言語にほんやくするための処理　エラーの出力はC言語で返ってくる
+                        let errMessage = String(cString: sqlite3_errmsg(dbPointer))
+                        print("クエリ実行error: \(errMessage)")
                     }
                 }
-                // ステートメントの解放
-                sqlite3_finalize(statement)
+                else{
+                    let errMessage = String(cString: sqlite3_errmsg(dbPointer))
+                    print("クエリ生成error: \(errMessage)")
+                }
+                //ステートメントの解放
+                sqlite3_finalize(statementCommand)
             }
-            // データベースのクローズ
-            sqlite3_close(db)
-        }*/
+            else{
+                let errMessage = String(cString: sqlite3_errmsg(dbPointer))
+                print("データベース接続error: \(errMessage)")
+            }
+            //DataBaseの接続をクローズする
+            sqlite3_close(dbPointer)
+            
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        /*
- 　　　　　データベースの接続文字列を変数に入れる
-         データベースにコネクションを繋ぐ
-         SQLを変数に入れる（現在日時から過去のものをデータベースからデリートする）
-         コネクションとSQLでクエリをじっこうする
-         */
     }
 }

@@ -26,4 +26,6 @@ class LimitOneItemViewController : UIViewController{
         DateLabel.text = "2024-01-04"
         
     }
+    
+    
 }
