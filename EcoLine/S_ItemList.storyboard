@@ -184,7 +184,7 @@
                                         <barButtonItem key="leftBarButtonItem" title="Item" id="lB3-Lz-M8j"/>
                                         <barButtonItem key="rightBarButtonItem" title="Item" id="52J-U4-fqM">
                                             <connections>
-                                                <action selector="AllDeleteButton:" destination="jEc-XT-dkG" id="j9a-FA-bK5"/>
+                                                <action selector="allDeleteButton:" destination="4SF-Na-i9H" id="9mg-BC-rXw"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -212,7 +212,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y6F-vj-uFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="jEc-XT-dkG" userLabel="Exit" sceneMemberID="exit"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="9je-qo-6wf"/>
             </objects>
             <point key="canvasLocation" x="-1365" y="547"/>

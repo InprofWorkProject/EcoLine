@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class LimitListController :  UIViewController,  UITableViewDelegate, UITableViewDataSource{
-    @IBOutlet var ListTable: [UITableView]!
+    @IBOutlet var ListTable: UITableView!
     @IBOutlet weak var UpperNav: UINavigationBar!
     @IBOutlet weak var LowerNav: UINavigationBar!
     @IBOutlet var PanGesture: UIPanGestureRecognizer!
@@ -38,10 +38,15 @@ class LimitListController :  UIViewController,  UITableViewDelegate, UITableView
         
         FooterButton.title = ""
         
-        AllDeleteButton.title = "一括消去"
+        AllDeleteButton.title = "期限切消去"
+        
+        ListTable.dataSource = self
+        ListTable.delegate = self
         
         
     }
+    
+    
     
     //定義する処理をコメントで書いておく
     
@@ -79,17 +84,13 @@ class LimitListController :  UIViewController,  UITableViewDelegate, UITableView
     //削除後のデータをテーブルに再標準させる
     //-------------------------------------------------------------------
     
-    //一括消去
-    //-------------------------------------------------------------------
-    //一括消去のボタンが押されたイベントを受け取る
-    //現在日時以前（当日は含まない）のデータを探索する
-    //データベースから日付データで期限外のデータを取得する
-    //SQLに主キーのデータを渡す
-    //削除ボタンのイベントを受け取る
-    //削除の確認してポップアップを出す
-    //SQLを実行する
-    //削除後のデータをテーブルに再標準させる
-    //-------------------------------------------------------------------
+    
+    //一括削除ボタン
+    @IBAction func allDeleteButton(_ sender: UIBarButtonItem){
+        
+        AllDeleteAlert.allDeleteAction(from: self)
+    }
+    
     
     //-------------------------------------------------------------------
     //並べ替え機能
@@ -113,5 +114,5 @@ class LimitListController :  UIViewController,  UITableViewDelegate, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "YourCellIdentifier", for: indexPath)
         // ここでセルにデータを設定する
         return cell
-}
+    }
 }

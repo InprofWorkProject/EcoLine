@@ -21,7 +21,6 @@ class ItemListController : UIViewController,  UITableViewDelegate, UITableViewDa
     @IBOutlet weak var FooterButton: UINavigationItem!
     
     //仮のデータ
-      var data = [1,2,3]
     
     override func viewDidLoad() {
        
@@ -32,6 +31,9 @@ class ItemListController : UIViewController,  UITableViewDelegate, UITableViewDa
         TitleButton.setTitle("EcoLine", for: .normal)
         DeleteSelectButton.title = "選択消去"
         FooterButton.title = ""
+        
+        ListTable.dataSource = self
+        ListTable.delegate = self
         
     }
     
@@ -76,7 +78,7 @@ class ItemListController : UIViewController,  UITableViewDelegate, UITableViewDa
     //期限の日にち順にソート
     //際表示
     //-------------------------------------------------------------------
-    
+    var data = [1,2,3]
     //仮のメソッド（コンパイルエラーを消えるか試すため）
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // テーブルビューのセルの数を返します。
