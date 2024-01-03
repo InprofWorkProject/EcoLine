@@ -9,7 +9,10 @@
 import Foundation
 import UIKit
 
-class AllDeleteAlert{//   　　　　　UIViewController型を引数で受け取る　　deleteするためのアクションここを変更して違うアクションにできる
+class PopUpAlert{
+    
+    
+    //   　　　　　UIViewController型を引数で受け取る　　deleteするためのアクションここを変更して違うアクションにできる
     static func allDeleteAction(from viewController: UIViewController){
         
         let alertController = UIAlertController(title : "一括削除", message: "一括削除します、よろしいですか？", preferredStyle: .alert)
@@ -29,5 +32,11 @@ class AllDeleteAlert{//   　　　　　UIViewController型を引数で受け�
         //              ↓モーダル表示させる
         viewController.present(alertController, animated: true, completion: nil)
     }
+    
+    
+    
+    
+    
+    
 }
 

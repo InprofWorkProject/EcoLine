@@ -20,12 +20,15 @@ class ItemListController : UIViewController,  UITableViewDelegate, UITableViewDa
     @IBOutlet weak var TitleButton: UIButton!
     @IBOutlet weak var FooterButton: UINavigationItem!
     
-    //仮のデータ
     
+    //仮のデータ
+    var data = [1,2,3]
     override func viewDidLoad() {
        
         super.viewDidLoad()
         
+        //表示するようのデータが入ってる
+        var selectData = DataBaseManager.selectDataBase()
         ReturnBottun.title = "<"
         SortListButton.title = "並びs替え"
         TitleButton.setTitle("EcoLine", for: .normal)
@@ -37,8 +40,25 @@ class ItemListController : UIViewController,  UITableViewDelegate, UITableViewDa
         
     }
     
-    //定義する処理をコメントで書いておく
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return data.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // テーブルビューのセルを設定します。
+        let cell = tableView.dequeueReusableCell(withIdentifier: "YourCellIdentifier", for: indexPath)
+        // ここでセルにデータを設定する
+        return cell
+    }
+    
+    /*
+     //戻るボタン
+     @IBAction func backViewScreen(_ sendet: UIBarButtonItem){
+     SegueManager.toNextView(デフォルト画面のviewController, self)
+     }
+     */
     
     //データの表示
     //--------------------------------------------------------------------
@@ -78,19 +98,8 @@ class ItemListController : UIViewController,  UITableViewDelegate, UITableViewDa
     //期限の日にち順にソート
     //際表示
     //-------------------------------------------------------------------
-    var data = [1,2,3]
-    //仮のメソッド（コンパイルエラーを消えるか試すため）
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // テーブルビューのセルの数を返します。
-        return data.count
-    }
-    //仮のメソッド
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // テーブルビューのセルを設定します。
-        let cell = tableView.dequeueReusableCell(withIdentifier: "YourCellIdentifier", for: indexPath)
-        // ここでセルにデータを設定する
-        return cell
-    }
+  
+    
 
 }
 

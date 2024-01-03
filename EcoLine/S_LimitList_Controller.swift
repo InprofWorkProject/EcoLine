@@ -27,6 +27,8 @@ class LimitListController :  UIViewController,  UITableViewDelegate, UITableView
     override func viewDidLoad() {
        
         super.viewDidLoad()
+        //表示するようのデータが入ってる
+        var limitSelectData = DataBaseManager.limitSelectDataBase()
         
         ReturnBottun.title = "<"
         
@@ -45,7 +47,18 @@ class LimitListController :  UIViewController,  UITableViewDelegate, UITableView
         
         
     }
+    //一括削除ボタン
+    @IBAction func allDeleteButton(_ sender: UIBarButtonItem){
+        
+        PopUpAlert.allDeleteAction(from: self)
+    }
     
+    /*
+     //戻るボタン
+     @IBAction func backViewScreen(_ sendet: UIBarButtonItem){
+     SegueManager.toNextView(デフォルト画面のviewController, self)
+     }
+     */
     
     
     //定義する処理をコメントで書いておく
@@ -82,15 +95,7 @@ class LimitListController :  UIViewController,  UITableViewDelegate, UITableView
     //削除の確認してポップアップを出す
     //SQLを実行する
     //削除後のデータをテーブルに再標準させる
-    //-------------------------------------------------------------------
-    
-    
-    //一括削除ボタン
-    @IBAction func allDeleteButton(_ sender: UIBarButtonItem){
-        
-        AllDeleteAlert.allDeleteAction(from: self)
-    }
-    
+    //-----------------------------------------------------------------
     
     //-------------------------------------------------------------------
     //並べ替え機能
@@ -103,9 +108,9 @@ class LimitListController :  UIViewController,  UITableViewDelegate, UITableView
     
     
     
-    //仮のメソッド（コンパイルエラーを消えるか試すため）
+    //データベースから取ってきたデータが何件かを返す）
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // テーブルビューのセルの数を返します。
+        
         return data.count
     }
     //仮のメソッド
