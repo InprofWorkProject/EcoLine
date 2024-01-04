@@ -21,7 +21,7 @@ class ItemListController : UIViewController,  UITableViewDelegate, UITableViewDa
     @IBOutlet weak var FooterButton: UINavigationItem!
     
     
-    //仮のデータ
+    
     var data = [1,2,3]
     override func viewDidLoad() {
        
