@@ -22,8 +22,9 @@ class OneItemViewController : UIViewController{
     @IBOutlet weak var LowLeftButton: UIBarButtonItem!
     
     
-    
-    
-    
-    
+    override func viewDidLoad() {
+        NameLabel.text = "冷蔵庫の中身"
+        DateLabel.text = "2024-01-04"
+        
+    }
 }

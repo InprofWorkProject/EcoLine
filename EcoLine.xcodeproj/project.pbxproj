@@ -20,7 +20,9 @@
 		F79CCEF82B3E227D0074569E /* S_ItemList_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79CCEF72B3E227D0074569E /* S_ItemList_Controller.swift */; };
 		F7A3446D2B3F73430043FAA7 /* S_OneItemView_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A3446C2B3F73430043FAA7 /* S_OneItemView_Controller.swift */; };
 		F7C9C81A2B3F6EB8003C6AD6 /* S_LimitList_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C9C8192B3F6EB8003C6AD6 /* S_LimitList_Controller.swift */; };
-		F7F6E7BE2B3FABFA00AD78A6 /* S_AllDeletePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6E7BD2B3FABFA00AD78A6 /* S_AllDeletePopUp.swift */; };
+		F7D6CC912B442BAB00369909 /* ListViewToTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D6CC902B442BAB00369909 /* ListViewToTable.swift */; };
+		F7E2EF782B44E25500B98C89 /* mydatabase.db in Resources */ = {isa = PBXBuildFile; fileRef = F7E2EF772B44E25500B98C89 /* mydatabase.db */; };
+		F7F6E7BE2B3FABFA00AD78A6 /* S_PopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6E7BD2B3FABFA00AD78A6 /* S_PopUpView.swift */; };
 		F7F6E7C02B40351100AD78A6 /* S_DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6E7BF2B40351100AD78A6 /* S_DataBaseManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +63,9 @@
 		F79CCEF72B3E227D0074569E /* S_ItemList_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_ItemList_Controller.swift; sourceTree = "<group>"; };
 		F7A3446C2B3F73430043FAA7 /* S_OneItemView_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_OneItemView_Controller.swift; sourceTree = "<group>"; };
 		F7C9C8192B3F6EB8003C6AD6 /* S_LimitList_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_LimitList_Controller.swift; sourceTree = "<group>"; };
-		F7F6E7BD2B3FABFA00AD78A6 /* S_AllDeletePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_AllDeletePopUp.swift; sourceTree = "<group>"; };
+		F7D6CC902B442BAB00369909 /* ListViewToTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewToTable.swift; sourceTree = "<group>"; };
+		F7E2EF772B44E25500B98C89 /* mydatabase.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = mydatabase.db; sourceTree = "<group>"; };
+		F7F6E7BD2B3FABFA00AD78A6 /* S_PopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_PopUpView.swift; sourceTree = "<group>"; };
 		F7F6E7BF2B40351100AD78A6 /* S_DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_DataBaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,9 +128,11 @@
 				F79CCEF52B3E1C3D0074569E /* S_ItemList.storyboard */,
 				F7A3446C2B3F73430043FAA7 /* S_OneItemView_Controller.swift */,
 				F75A01442B3F8656008DB4ED /* S_LimitOneItemView_Controller.swift */,
-				F7F6E7BD2B3FABFA00AD78A6 /* S_AllDeletePopUp.swift */,
+				F7F6E7BD2B3FABFA00AD78A6 /* S_PopUpView.swift */,
 				F7F6E7BF2B40351100AD78A6 /* S_DataBaseManager.swift */,
 				F7034BBF2B40F33F00F9A264 /* S_SegueManager.swift */,
+				F7D6CC902B442BAB00369909 /* ListViewToTable.swift */,
+				F7E2EF772B44E25500B98C89 /* mydatabase.db */,
 			);
 			path = EcoLine;
 			sourceTree = "<group>";
@@ -255,6 +261,7 @@
 			files = (
 				F79CCEF62B3E1C3D0074569E /* S_ItemList.storyboard in Resources */,
 				F739BBB42B3D753C007FB38C /* LaunchScreen.storyboard in Resources */,
+				F7E2EF782B44E25500B98C89 /* mydatabase.db in Resources */,
 				F739BBB12B3D753C007FB38C /* Assets.xcassets in Resources */,
 				F739BBAF2B3D751F007FB38C /* Main.storyboard in Resources */,
 			);
@@ -284,7 +291,8 @@
 				F7F6E7C02B40351100AD78A6 /* S_DataBaseManager.swift in Sources */,
 				F7C9C81A2B3F6EB8003C6AD6 /* S_LimitList_Controller.swift in Sources */,
 				F79CCEF82B3E227D0074569E /* S_ItemList_Controller.swift in Sources */,
-				F7F6E7BE2B3FABFA00AD78A6 /* S_AllDeletePopUp.swift in Sources */,
+				F7F6E7BE2B3FABFA00AD78A6 /* S_PopUpView.swift in Sources */,
+				F7D6CC912B442BAB00369909 /* ListViewToTable.swift in Sources */,
 				F739BBAC2B3D751F007FB38C /* ViewController.swift in Sources */,
 				F7A3446D2B3F73430043FAA7 /* S_OneItemView_Controller.swift in Sources */,
 				F75A01452B3F8657008DB4ED /* S_LimitOneItemView_Controller.swift in Sources */,

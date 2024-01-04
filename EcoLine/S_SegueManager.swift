@@ -14,5 +14,11 @@ class SegueManager{
     static func toNextView(toNext toPresent: UIViewController, from fromPresent: UIViewController){
         fromPresent.present(toPresent, animated: true, completion: nil)
         //呼び出して画面遷移させるメソッド
+        
+        
+        //feature_ss branch
+        
+        
+        
     }
 }

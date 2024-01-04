@@ -20,4 +20,12 @@ class LimitOneItemViewController : UIViewController{
     @IBOutlet weak var LowerNavBar: UINavigationItem!
     @IBOutlet var LowRightButton: UIBarButtonItem!
     @IBOutlet var LowLefrButton: UIBarButtonItem!
+    
+    override func viewDidLoad() {
+        NameLabel.text = "冷蔵庫の中身"
+        DateLabel.text = "2024-01-04"
+        
+    }
+    
+    
 }
